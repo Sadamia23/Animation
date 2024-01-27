@@ -1,0 +1,48 @@
+.container {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.parent {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+.child {
+  height: 120px;
+  width: 100%;
+  transform: translateX(-85%);
+  animation: slide 6s infinite;
+}
+
+.child-1 {
+  background-color: #c7f0c0;
+}
+.child-2 {
+  background-color: #5a4646;
+}
+.child-3 {
+  background-color: #95b8cc;
+}
+.child-4 {
+  background-color: #e9c1c1;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-85%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(85%);
+  }
+  75% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-85%);
+  }
+}
